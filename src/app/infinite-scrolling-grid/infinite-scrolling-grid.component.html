@@ -1,0 +1,9 @@
+<div class="scroll-container" #scrollContainer>
+    <div *ngFor="let item of data" class="item">
+      {{ item }}
+    </div>
+  
+    <div class="loading" *ngIf="loading">
+      Loading...
+    </div>
+  </div>  

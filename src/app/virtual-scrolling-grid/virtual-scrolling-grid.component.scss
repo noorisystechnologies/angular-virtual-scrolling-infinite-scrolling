@@ -1,0 +1,127 @@
+// .example-viewport {
+//     height: 300px;
+//     border: 1px solid #ccc;
+//     overflow: auto;
+// }
+
+// .example-table {
+//     width: 100%;
+//     table-layout: fixed;
+// }
+
+// .example-row {
+//     display: flex;
+//     border-bottom: 1px solid #ccc;
+// }
+
+// .extra-data {
+//     flex: 1;
+//     padding: 10px;
+//     text-align: right;
+// }
+
+// .item-data {
+//     flex: 1;
+//     padding: 10px;
+// }
+
+// .scroll-container {
+//     overflow-x: auto;
+//     height: 400px;
+//     width: 100%;
+//     margin: auto;
+// }
+
+// table {
+//     width: 200%;
+//     border-collapse: collapse;
+// }
+
+// th,
+// td {
+//     padding: 10px;
+//     border: 1px solid #ccc;
+// }
+
+// th {
+//     background-color: #f0f0f0;
+// }
+
+// /* Style the sticky column */
+// .sticky-column {
+//     position: sticky;
+//     left: 0;
+//     background-color: #f0f0f0;
+//     z-index: 1;
+// }
+
+// td:not(.sticky-column) {
+//     position: relative;
+//     background-color: white;
+// }
+
+.scroll-container {
+    overflow-x: auto;
+    height: 500px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 200%;
+  }
+  
+  th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  th.sticky-header:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #ffcc00;
+    z-index: 2;
+  }
+  
+  td.sticky-column:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #ffeeaa;
+    z-index: 1;
+  }
+  
+  td.sticky-column:first-child .first-column-content {
+    padding-left: 10px;
+  }  
+
+
+
+// table {
+//     width: auto;
+//     border-collapse: collapse;
+// }
+
+// th, td {
+//     padding: 10px;
+//     border: 1px solid #ccc;
+// }
+
+// th {
+//     background-color: #f0f0f0;
+// }
+
+// .sticky-column {
+//     position: sticky;
+//     left: 0;
+//     background-color: #f0f0f0;
+//     z-index: 1;
+// }
+
+// td:not(.sticky-column) {
+//     position: relative;
+//     background-color: white;
+// }

@@ -1,0 +1,59 @@
+<!-- <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+    <table class="example-table">
+        <tbody>
+            <tr *cdkVirtualFor="let item of items" class="example-row">
+                <td class="item-data">{{ item }}</td>
+                <td class="extra-data">Extra Data: {{ item }}</td>
+            </tr>
+        </tbody>
+    </table>
+</cdk-virtual-scroll-viewport> -->
+
+<div class="scroll-container">
+  <table>
+    <thead>
+      <tr>
+        <th class="sticky-header" *ngFor="let column of displayedColumns">{{ column }}</th>
+        <th class="sticky-header" *ngFor="let column of displayedColumns">{{ column }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of dataSource" class="table-row">
+        <td class="sticky-column" *ngFor="let column of displayedColumns; let i = index">{{ row | dynamicProperty: column }}</td>
+        <td class="sticky-column" *ngFor="let column of displayedColumns; let i = index">{{ row | dynamicProperty: column }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- <div class="scroll-container">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>{{ displayedColumns[0] }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of dataSource" class="table-row">
+            <td>{{ row[displayedColumns[0]] }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-scrollable">
+      <table>
+        <thead>
+          <tr>
+            <th *ngFor="let column of displayedColumns.slice(1)">{{ column }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of dataSource" class="table-row">
+            <td *ngFor="let column of displayedColumns.slice(1)">{{ row[column] }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> -->
